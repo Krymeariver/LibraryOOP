@@ -1,10 +1,6 @@
 #ifndef LIBRARIAN_H
 #define LIBRARIAN_H
-#include <iostream>
-#include <stdio.h>
-#include <stdlib.h>
-#include <cstring>
-
+#include "Library.h"
 class Librarian
 {
 	public:
@@ -12,6 +8,10 @@ class Librarian
 		Librarian(std:: string Name);
 		std :: string Name;
 		~Librarian();
+		void WriteInFile();
+		std :: string path;
+		std :: string ExePath();
+	
 	protected:
 };
 
